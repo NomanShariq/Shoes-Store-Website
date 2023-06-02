@@ -1,0 +1,26 @@
+.wc-stripe-blocks-offsite-notice {
+  display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  div {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-width: 105px;
+    }
+
+    p {
+      margin: 1em 0 0 0;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}

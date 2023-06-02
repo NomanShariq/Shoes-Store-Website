@@ -1,0 +1,36 @@
+.wc-stripe-blocks-radio-control__option {
+  display: flex;
+  align-items: center;
+
+  .wc-stripe-blocks-radio-control__label {
+    margin-left: 10px;
+  }
+
+  .wc-stripe-blocks-radio-control__input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 15px;
+    min-height: 15px;
+    background: #fff;
+    border: 2px solid #50575e;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+
+    &:checked {
+      &:before {
+        background: #000;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        left: 50%;
+        min-width: 8px;
+        min-height: 8px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

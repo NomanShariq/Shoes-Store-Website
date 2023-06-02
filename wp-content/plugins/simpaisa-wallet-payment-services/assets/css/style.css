@@ -1,0 +1,234 @@
+.sp_wallet_account_type {
+    margin: 0 0 0 15px !important;
+    height: 15px !important;
+    width: 15px !important;
+    vertical-align: middle;
+    display: initial;
+}
+
+#sp_wallet_account {
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+#sp_wallet_account::-webkit-outer-spin-button,
+#sp_wallet_account::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+#sp_wallet_account[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+.woocommerce-checkout.processing .blockUI.blockOverlay {
+    background-image: url('../spinner.gif') !important;
+    background-position: center 50% !important;
+    background-repeat: no-repeat !important;
+    position: fixed !important;
+    content: 'Processing..';
+}
+
+.woocommerce-checkout.processing .blockUI.blockOverlay::before {
+    font-family: "Roboto-Regular", sans-serif;
+    font-weight: inherit;
+    color: #000;
+    background: #ced4da00;
+    padding: 10px;
+    text-align: center;
+    content: 'Processing..';
+    animation: none;
+    margin-top: 20px;
+    left: 43%;
+    right: 44%;
+    position: relative;
+    width: 250px;
+}
+
+.simpaisa-jazz-easy-nav-item .simpaisa-jazz-easy-nav-link,
+.simpaisa-jazz-easy-nav-tabs .simpaisa-jazz-easy-nav-link {
+    -webkit-transition: all 300ms ease 0s;
+    -moz-transition: all 300ms ease 0s;
+    -o-transition: all 300ms ease 0s;
+    -ms-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s;
+}
+
+.simpaisa-jazz-easy-card a {
+    -webkit-transition: all 150ms ease 0s;
+    -moz-transition: all 150ms ease 0s;
+    -o-transition: all 150ms ease 0s;
+    -ms-transition: all 150ms ease 0s;
+    transition: all 150ms ease 0s;
+}
+
+.simpaisa-jazz-easy-nav-tabs {
+    border: 0;
+    padding: 0px 0.7rem;
+    /* text-align: center; */
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+.simpaisa-jazz-easy-nav-tabs:not(.simpaisa-jazz-easy-nav-tabs-neutral)>.simpaisa-jazz-easy-nav-item>.simpaisa-jazz-easy-nav-link.active {
+    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+.simpaisa-jazz-easy-card .simpaisa-jazz-easy-nav-tabs {
+    border-top-right-radius: 0.1875rem;
+    border-top-left-radius: 0.1875rem;
+}
+
+.simpaisa-jazz-easy-nav-item>a>img{
+    margin: 0 !important;
+    width: 80px !important;
+    max-height: 3em !important;
+}
+.simpaisa-jazz-easy-nav-tabs>.simpaisa-jazz-easy-nav-item>.simpaisa-jazz-easy-nav-link {
+    color: #888888;
+    margin: 0;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0px 20px;
+    line-height: 1.5;
+    display: block;
+    cursor: pointer;
+    height: 35px;
+}
+
+.simpaisa-jazz-easy-nav-tabs > .simpaisa-jazz-easy-nav-item {
+    float: none !important;
+    display: inline-block;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.simpaisa-jazz-easy-nav-tabs>.simpaisa-jazz-easy-nav-item>.simpaisa-jazz-easy-nav-link:hover {
+    background-color: transparent;
+}
+
+.simpaisa-jazz-easy-nav-tabs>.simpaisa-jazz-easy-nav-item>.simpaisa-jazz-easy-nav-link.active {
+    background-color: transparent;
+    border: 1.5px solid #3d5c9b;
+    border-radius: 5px;
+    color: #FFFFFF;
+    box-shadow: none !important;
+    height: 35px;
+}
+
+.simpaisa-jazz-easy-nav-tabs>.simpaisa-jazz-easy-nav-item>.simpaisa-jazz-easy-nav-link i.now-ui-icons {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+}
+
+.simpaisa-jazz-easy-nav-tabs.simpaisa-jazz-easy-nav-tabs-neutral>.simpaisa-jazz-easy-nav-item>.simpaisa-jazz-easy-nav-link {
+    color: #FFFFFF;
+}
+
+.simpaisa-jazz-easy-nav-tabs.simpaisa-jazz-easy-nav-tabs-neutral>.simpaisa-jazz-easy-nav-item>.simpaisa-jazz-easy-nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+}
+
+.simpaisa-jazz-easy-card {
+    border: 1px solid #cbcbcb;
+    display: inline-block;
+    position: relative;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 1rem;
+    background: #fff;
+}
+
+.simpaisa-jazz-easy-card .simpaisa-jazz-easy-card-header {
+    background-color: transparent;
+    border-bottom: 0;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 0.8rem;
+    /* height: 50px; */
+}
+
+.simpaisa-jazz-easy-card[data-background-color="orange"] {
+    background-color: #f96332;
+}
+
+.simpaisa-jazz-easy-card[data-background-color="red"] {
+    background-color: #FF3636;
+}
+
+.simpaisa-jazz-easy-card[data-background-color="yellow"] {
+    background-color: #FFB236;
+}
+
+.simpaisa-jazz-easy-card[data-background-color="blue"] {
+    background-color: #2CA8FF;
+}
+
+.simpaisa-jazz-easy-card[data-background-color="green"] {
+    background-color: #15b60d;
+}
+
+@media screen and (max-width: 768px) {
+
+    .simpaisa-jazz-easy-nav-tabs {
+        display: flex;
+        /* display: inline-block; */
+        width: 100%;
+        /* padding-left: 100px; */
+        /* padding-right: 100px; */
+        text-align: center;
+    }
+
+    .simpaisa-jazz-easy-nav-tabs .simpaisa-jazz-easy-nav-item>.simpaisa-jazz-easy-nav-link {
+        margin-bottom: 5px;
+    }
+}
+
+#wc-simpaisa_woo_jz_ep_wallet-cc-form {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* .payment_method_simpaisa_woo_jz_ep_wallet {
+    padding-left: 0px !important;
+} */
+
+#sp_wallet_account{
+    border: 1px solid #918C8C;
+    border-radius: 0.4rem;
+    font-size: var(--wp--preset--font-size--small);
+    width: 100%;
+    height: 35px;
+    background: #fff;
+}
+
+/* .simpaisa-jazz-easy-paymentgateway_logos{
+    width: 4rem;
+    margin-top: 2px;
+} */
+
+.simpaisa-jazz-easy-card-hr{
+    opacity: 0.4;
+    margin-bottom: 0;
+    background: #cbcbcb;
+}
+
+.simpaisa-jazz-easy-card-body{
+    margin-top: 0.8rem;
+}
+
+.simpaisa-jazz-easy-phone-err{
+    font-size: small;
+    color: red;
+}

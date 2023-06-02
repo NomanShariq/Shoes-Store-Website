@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('react', 'wc-blocks-registry', 'wc-price-format', 'wc-settings', 'wc-stripe-gpay-external', 'wp-api-fetch', 'wp-element', 'wp-is-shallow-equal', 'wp-polyfill'), 'version' => 'f3e4521fbb0d90b171f76df289f9742e');

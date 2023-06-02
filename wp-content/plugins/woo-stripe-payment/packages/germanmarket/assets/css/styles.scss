@@ -1,0 +1,22 @@
+.wgm_second_checkout {
+  .wc-stripe-card-icons-container {
+    img {
+      &.wc-stripe-card-icon {
+        max-width: 43px;
+        max-height: 26px;
+        width: 43px;
+        height: 26px;
+        float: none;
+        display: inline;
+      }
+    }
+  }
+
+  img {
+    &[src*="ideal.svg"] {
+      max-width: 38px;
+      width: 38px;
+      max-height: 35px;
+    }
+  }
+}

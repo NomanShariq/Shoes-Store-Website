@@ -1,0 +1,623 @@
+{
+  "name": "woolentor/recently-viewed-products",
+  "category": "woolentor-blocks",
+  "title": "Recently Viewed Products",
+  "description": "Display Recently Viewed Products.",
+  "keywords": [
+    "woolentor",
+    "recent product view",
+    "recently view",
+    "recent view product"
+  ],
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "blockUniqId": {
+      "type": "string",
+      "default": ""
+    },
+    "areaPadding": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} { padding: {{areaPadding}} !important; }"
+      }
+    },
+    "areaBGProperty": {
+      "type": "object",
+      "default": {
+        "imageId": null,
+        "imageUrl": "",
+        "position": "",
+        "attachment": "",
+        "repeat": "",
+        "size": ""
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}}"
+      }
+    },
+    "showEmptyMessage": {
+      "type": "boolean",
+      "default": true
+    },
+    "emptyMessage": {
+      "type": "string",
+      "default": "You haven&#039;t viewed at any of the products yet."
+    },
+    "perPage": {
+      "type": "number",
+      "default": 4
+    },
+    "order": {
+      "type": "string",
+      "default": "DESC"
+    },
+    "columns": {
+      "type": "object",
+      "default": {
+        "desktop": 4
+      }
+    },
+    "noGutter": {
+      "type": "boolean",
+      "default": false
+    },
+    "columnSpace": {
+      "type": "number",
+      "default": 15,
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "noGutter",
+              "condition": "==",
+              "value": false
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-grid:not(.woolentor-no-gutters) { column-gap: {{columnSpace}}px; }"
+      }
+    },
+    "rowSpace": {
+      "type": "number",
+      "default": 15,
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "noGutter",
+              "condition": "==",
+              "value": false
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-grid:not(.woolentor-no-gutters) { row-gap: {{rowSpace}}px; }"
+      }
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "showPrice": {
+      "type": "boolean",
+      "default": true
+    },
+    "showAddToCart": {
+      "type": "boolean",
+      "default": true
+    },
+    "showBadge": {
+      "type": "boolean",
+      "default": true
+    },
+    "titleTag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "itemPadding": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-viewed-product{ padding: {{itemPadding}} !important; }"
+      }
+    },
+    "itemBorder": {
+      "type": "object",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-viewed-product"
+      }
+    },
+    "itemBorderRadius": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-viewed-product{ border-radius: {{itemBorderRadius}} !important; }"
+      }
+    },
+    "contentAlignment": {
+      "type": "string",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content { text-align: {{contentAlignment}}; }"
+      }
+    },
+    "contentPadding": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content{ padding: {{contentPadding}} !important; }"
+      }
+    },
+    "contentBorder": {
+      "type": "object",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content"
+      }
+    },
+    "contentBorderRadius": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content{ border-radius: {{contentBorderRadius}} !important; }"
+      }
+    },
+    "titleSize": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showTitle",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-title { font-size: {{titleSize}} !important; }"
+      }
+    },
+    "titleColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showTitle",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-title a { color: {{titleColor}}; }"
+      }
+    },
+    "titleHoverColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showTitle",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-title a:hover { color: {{titleHoverColor}}; }"
+      }
+    },
+    "titleMargin": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "dependency": [
+        [
+          {
+            "key": "showTitle",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-title{ margin: {{titleMargin}} !important; }"
+      }
+    },
+    "priceSize": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showPrice",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-price span { font-size: {{priceSize}}; }"
+      }
+    },
+    "priceColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showPrice",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-price span { color: {{priceColor}}; }"
+      }
+    },
+    "priceMargin": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "dependency": [
+        [
+          {
+            "key": "showPrice",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-price{ margin: {{priceMargin}} !important; }"
+      }
+    },
+    "addTocartSize": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showAddToCart",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content :is(.button, .added_to_cart) { font-size: {{addTocartSize}}; }"
+      }
+    },
+    "addTocartPadding": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "dependency": [
+        [
+          {
+            "key": "showAddToCart",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content :is(.button, .added_to_cart){ padding: {{addTocartPadding}} !important; }"
+      }
+    },
+    "cartButtonBorderRadius": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "dependency": [
+        [
+          {
+            "key": "showAddToCart",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content :is(.button, .added_to_cart){ border-radius: {{cartButtonBorderRadius}} !important; }"
+      }
+    },
+    "cartButtonColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showAddToCart",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content :is(.button, .added_to_cart) { color: {{cartButtonColor}}; }"
+      }
+    },
+    "cartButtonBGColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showAddToCart",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content :is(.button, .added_to_cart) { background-color: {{cartButtonBGColor}}; }"
+      }
+    },
+    "cartButtonBorder": {
+      "type": "object",
+      "dependency": [
+        [
+          {
+            "key": "showAddToCart",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content :is(.button, .added_to_cart)"
+      }
+    },
+    "cartButtonHoverColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showAddToCart",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content :is(.button, .added_to_cart):hover { color: {{cartButtonHoverColor}}; }"
+      }
+    },
+    "cartButtonHoverBGColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showAddToCart",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content :is(.button, .added_to_cart):hover { background-color: {{cartButtonHoverBGColor}}; }"
+      }
+    },
+    "cartButtonHoverBorder": {
+      "type": "object",
+      "dependency": [
+        [
+          {
+            "key": "showAddToCart",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-content :is(.button, .added_to_cart):hover"
+      }
+    },
+    "badgeSize": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showBadge",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-image .ht-product-label { font-size: {{badgeSize}}; }"
+      }
+    },
+    "badgeColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showBadge",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-image .ht-product-label { color: {{badgeColor}}; }"
+      }
+    },
+    "outStockBadgeColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showBadge",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-image .ht-product-label.ht-stockout { color: {{outStockBadgeColor}}; }"
+      }
+    },
+    "badgeBGColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showBadge",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-image .ht-product-label { background-color: {{badgeBGColor}}; }"
+      }
+    },
+    "badgeBorder": {
+      "type": "object",
+      "dependency": [
+        [
+          {
+            "key": "showBadge",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-image .ht-product-label"
+      }
+    },
+    "badgeBorderRadius": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "dependency": [
+        [
+          {
+            "key": "showBadge",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-image .ht-product-label{ border-radius: {{badgeBorderRadius}} !important; }"
+      }
+    },
+    "badgePadding": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "dependency": [
+        [
+          {
+            "key": "showBadge",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-recently-view-image .ht-product-label{ padding: {{badgePadding}} !important; }"
+      }
+    },
+    "emptyMessageSize": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showEmptyMessage",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-no-view-product { font-size: {{emptyMessageSize}}; }"
+      }
+    },
+    "emptyMessageColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showEmptyMessage",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-no-view-product { color: {{emptyMessageColor}}; }"
+      }
+    },
+    "emptyMessageBGColor": {
+      "type": "string",
+      "dependency": [
+        [
+          {
+            "key": "showEmptyMessage",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-no-view-product { background-color: {{emptyMessageBGColor}}; }"
+      }
+    },
+    "emptyMessagePadding": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "dependency": [
+        [
+          {
+            "key": "showEmptyMessage",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-no-view-product{ padding: {{emptyMessagePadding}} !important; }"
+      }
+    },
+    "emptyMessageMargin": {
+      "type": "object",
+      "default": {
+        "device": "desktop"
+      },
+      "dependency": [
+        [
+          {
+            "key": "showEmptyMessage",
+            "condition": "==",
+            "value": true
+          }
+        ]
+      ],
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-no-view-product{ margin: {{emptyMessageMargin}} !important; }"
+      }
+    }
+  }
+}

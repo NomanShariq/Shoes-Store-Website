@@ -1,0 +1,48 @@
+.payment-request-block-editor {
+  height: 40px;
+  background-color: #32325d;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    span {
+      margin-bottom: 5px;
+    }
+
+    canvas {
+      &.PaymentRequestButton-icon {
+        -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 10;
+        margin: 0 -1px -1px 7px;
+        will-change: opacity;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .payment-request-arrow {
+      z-index: 99;
+      position: absolute;
+      right: 8px;
+      border-right: 4px solid;
+      border-bottom: 4px solid;
+      height: 12px;
+      width: 12px;
+      transform: rotate(-45deg);
+    }
+  }
+
+}

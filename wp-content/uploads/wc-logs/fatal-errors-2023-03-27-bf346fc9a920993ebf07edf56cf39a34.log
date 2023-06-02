@@ -1,0 +1,4 @@
+2023-03-27T11:45:57+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 4541
+
+2023-03-27T11:46:06+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\misc.php on line 1629
+

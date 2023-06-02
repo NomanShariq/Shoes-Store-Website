@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wpml-config>
+    <admin-texts>
+        <key name="woocommerce_stripe_cc_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_googlepay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_applepay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_payment_request_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_ach_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_bancontact_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_eps_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_giropay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_ideal_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_klarna_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_multibanco_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_p24_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_sepa_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_sofort_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_wechat_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_afterpay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_affirm_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_alipay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_becs_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_boleto_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_fpx_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_grabpay_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_oxxo_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_konbini_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_paynow_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+        <key name="woocommerce_stripe_blik_settings">
+            <key name="title_text"/>
+            <key name="description"/>
+        </key>
+    </admin-texts>
+</wpml-config>

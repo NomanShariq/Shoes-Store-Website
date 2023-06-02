@@ -1,0 +1,21 @@
+2023-03-29T09:38:32+00:00 CRITICAL Uncaught Error: Call to a member function enqueue_styles() on null in C:\xampp\htdocs\wordpress\wp-content\plugins\header-footer-elementor\inc\class-header-footer-elementor.php:385
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(308): Header_Footer_Elementor->enqueue_scripts('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\script-loader.php(2180): do_action('wp_enqueue_scri...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-customize-manager.php(455): wp_enqueue_scripts()
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-customize-manager.php(552): WP_Customize_Manager->wp_die(0, 'Non-existent ch...')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(308): WP_Customize_Manager->setup_theme('')
+#7 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\wordpress\wp-settings.php(549): do_action('setup_theme')
+#10 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#14 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\header-footer-elementor\inc\class-header-footer-elementor.php on line 385
+
+2023-03-29T10:23:33+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro v3.11.2\modules\theme-builder\widgets\page-title.php on line 4
+

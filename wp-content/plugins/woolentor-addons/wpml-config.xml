@@ -1,0 +1,80 @@
+<wpml-config>
+    <admin-texts>
+        <key name="woolentor_woo_template_tabs">
+            <key name="singleproductpage"/>
+            <key name="productarchivepage"/>
+            <key name="productallarchivepage"/>
+            <key name="productcartpage"/>
+            <key name="productemptycartpage"/>
+            <key name="productcheckoutpage"/>
+            <key name="productcheckouttoppage"/>
+            <key name="productthankyoupage"/>
+            <key name="productmyaccountpage"/>
+            <key name="productmyaccountloginpage"/>
+            <key name="productquickview"/>
+            <key name="mini_cart_layout"/>
+        </key>
+        <key name="woolentor_rename_label_tabs">
+            <key name="wl_shop_add_to_cart_txt"/>
+            <key name="wl_add_to_cart_txt"/>
+            <key name="wl_description_tab_menu_title"/>
+            <key name="wl_additional_information_tab_menu_title"/>
+            <key name="wl_reviews_tab_menu_title"/>
+            <key name="wl_checkout_placeorder_btn_txt"/>
+        </key>
+        <key name="wishsuite_general_tabs">
+            <key name="logout_button"/>
+        </key>
+        <key name="wishsuite_settings_tabs">
+            <key name="button_text"/>
+            <key name="added_button_text"/>
+            <key name="exist_button_text"/>
+        </key>
+        <key name="wishsuite_table_settings_tabs">
+            <key name="wishlist_page"/>
+            <key name="table_heading">
+                <key name="remove"/>
+                <key name="image"/>
+                <key name="title"/>
+                <key name="price"/>
+                <key name="quantity"/>
+                <key name="add_to_cart"/>
+                <key name="description"/>
+                <key name="availability"/>
+                <key name="sku"/>
+                <key name="weight"/>
+                <key name="dimensions"/>
+                <key name="pa_color"/>
+                <key name="pa_size"/>
+            </key>
+            <key name="empty_table_text"/>
+            <key name="social_share_button_title"/>
+        </key>
+        <key name="ever_compare_settings_tabs">
+            <key name="button_text"/>
+            <key name="added_button_text"/>
+        </key>
+        <key name="ever_compare_table_settings_tabs">
+            <key name="compare_page"/>
+            <key name="shareable_link_button_text"/>
+            <key name="shareable_link_after_button_text"/>
+            <key name="limit"/>
+            <key name="table_heading">
+                <key name="title"/>
+                <key name="ratting"/>
+                <key name="price"/>
+                <key name="add_to_cart"/>
+                <key name="description"/>
+                <key name="availability"/>
+                <key name="sku"/>
+                <key name="weight"/>
+                <key name="dimensions"/>
+                <key name="pa_color"/>
+                <key name="pa_size"/>
+            </key>
+            <key name="reached_max_limit_message"/>
+            <key name="empty_table_text"/>
+            <key name="shop_button_text"/>
+        </key>
+    </admin-texts>
+</wpml-config>

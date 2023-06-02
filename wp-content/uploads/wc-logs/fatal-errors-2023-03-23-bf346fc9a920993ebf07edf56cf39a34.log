@@ -1,0 +1,8 @@
+2023-03-23T10:26:01+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\widgets\video.php on line 6
+
+2023-03-23T10:26:01+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\gateways\cheque\class-wc-gateway-cheque.php on line 8
+
+2023-03-23T10:26:02+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\core\editor\data\globals\endpoints\colors.php on line 6
+
+2023-03-23T10:26:05+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\widgets\progress.php on line 4
+

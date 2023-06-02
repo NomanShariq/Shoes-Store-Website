@@ -1,0 +1,104 @@
+2023-04-11T19:22:01+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\modules\motion-fx\module.php on line 12
+
+2023-04-11T20:00:22+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\modules\hotspot\widgets\hotspot.php on line 17
+
+2023-04-11T20:00:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\modules\call-to-action\widgets\call-to-action.php on line 17
+
+2023-04-11T20:18:35+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\class-wpdb.php on line 2431
+
+2023-04-11T20:18:49+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\class-wpdb.php on line 2431
+
+2023-04-11T20:18:55+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\plugin.php on line 205
+
+2023-04-11T20:18:55+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\managers\controls.php on line 608
+
+2023-04-11T20:18:56+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\plugin.php on line 158
+
+2023-04-11T20:19:03+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woolentor-addons\includes\addons\wb_product_sku.php on line 4
+
+2023-04-11T20:19:03+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\sina-extension-for-elementor\widgets\basic\sina-team.php on line 20
+
+2023-04-11T20:19:04+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\essential-addons-for-elementor-lite\includes\Elements\Woo_Product_Gallery.php on line 6
+
+2023-04-11T20:19:22+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\formatting.php on line 1097
+
+2023-04-11T20:19:45+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 4550
+
+2023-04-11T20:19:46+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\BlockTypes\ProductSaleBadge.php on line 123
+
+2023-04-11T20:19:46+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 4536
+
+2023-04-11T20:19:47+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 4550
+
+2023-04-11T20:20:57+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 4550
+
+2023-04-11T20:20:58+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\modules\theme-builder\documents\footer.php on line 4
+
+2023-04-11T20:21:29+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\widgets\divider.php on line 4
+
+2023-04-11T20:21:31+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\controls\groups\base.php on line 253
+
+2023-04-11T20:21:32+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\autoloader.php on line 293
+
+2023-04-11T20:21:35+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 649
+
+2023-04-11T20:21:35+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\class-wpdb.php on line 2431
+
+2023-04-11T20:21:36+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\l10n.php on line 187
+
+2023-04-11T20:21:36+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\controls\hidden.php on line 4
+
+2023-04-11T20:21:36+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\sub-controls-stack.php on line 148
+
+2023-04-11T20:21:37+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\src\Transport\Curl.php on line 205
+
+2023-04-11T20:21:40+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\class-wp.php on line 234
+
+2023-04-11T20:21:40+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 649
+
+2023-04-11T20:21:40+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\class-wp.php on line 235
+
+2023-04-11T20:21:43+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\class-wpdb.php on line 2431
+
+2023-04-11T20:23:02+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\plugin.php on line 158
+
+2023-04-11T20:23:37+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\plugin.php on line 158
+
+2023-04-11T20:23:37+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\modules\woocommerce\widgets\purchase-summary.php on line 13
+
+2023-04-11T20:23:39+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\plugin.php on line 158
+
+2023-04-11T20:23:39+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\modules\woocommerce\widgets\my-account.php on line 15
+
+2023-04-11T20:23:43+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-payment-gateways.php on line 237
+
+2023-04-11T20:23:43+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 649
+
+2023-04-11T20:23:43+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor-pro\modules\social\widgets\facebook-page.php on line 8
+
+2023-04-11T20:23:43+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\controls-stack.php on line 1398
+
+2023-04-11T20:23:52+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 649
+
+2023-04-11T20:23:52+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\class-wpdb.php on line 2431
+
+2023-04-11T20:25:06+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\theme.php on line 1230
+
+2023-04-11T20:25:58+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\controls-stack.php on line 299
+
+2023-04-11T20:26:05+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Assets\Api.php on line 97
+
+2023-04-11T20:26:05+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\class-wp-object-cache.php on line 364
+
+2023-04-11T20:26:19+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\post.php on line 989
+
+2023-04-11T20:26:25+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\plugin.php on line 209
+
+2023-04-11T20:26:25+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\sodium_compat\lib\namespaced.php on line 30
+
+2023-04-11T20:27:27+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\autoloader.php on line 293
+
+2023-04-11T20:49:53+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\media.php on line 3862
+
+2023-04-11T20:54:17+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\class-wpdb.php on line 2431
+

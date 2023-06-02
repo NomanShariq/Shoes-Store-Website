@@ -1,0 +1,16 @@
+.wc-stripe-label-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .wc-block-components-payment-method-label {
+    flex: 0 1 auto;
+  }
+
+  .wc-block-components-payment-method-icons {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+  }
+}

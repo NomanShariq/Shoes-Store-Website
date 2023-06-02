@@ -1,0 +1,180 @@
+$min-width: 475px;
+
+.wc-stripe-simple-form {
+  background-color: #fff;
+  padding: 10px 0;
+
+  * {
+    font-family: Source Code Pro, Consolas, Menlo, monospace;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box;
+  }
+
+  .StripeElement {
+    padding-left: 0px;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:first-of-type {
+      margin-bottom: 10px;
+    }
+  }
+
+  .field {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    display: flex;
+
+    &.half-width {
+      width: 50%;
+
+      &:nth-child(even) {
+        .field-item {
+          margin: 0 0 0 10px;
+        }
+      }
+
+      &:nth-child(odd) {
+        .field-item {
+          margin: 0 10px 0 0;
+        }
+      }
+    }
+
+    .field-item {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .baseline {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background-color: #cfd7df;
+    transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  label {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 8px;
+    color: #cfd7df;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transform-origin: 0 50%;
+    cursor: text;
+    transition-property: color, transform;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .input {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 7px;
+    color: #32325d;
+    background-color: transparent;
+  }
+
+  .input {
+
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder {
+      color: transparent;
+      transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    &.StripeElement {
+      opacity: 0;
+      transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      will-change: opacity;
+    }
+
+    &.focused,
+    &:not(.empty) {
+      opacity: 1;
+
+      + label {
+        color: #aab7c4;
+        transform: scale(0.85) translateY(-25px);
+        cursor: default;
+      }
+    }
+
+    &.focused {
+      + label {
+        color: #24b47e;
+
+        + .baseline {
+          background-color: #24b47e;
+        }
+      }
+    }
+
+    &.invalid {
+      + label {
+        color: #ffa27b;
+
+        + .baseline {
+          background-color: #e25950;
+        }
+      }
+    }
+  }
+
+  @media(min-width: $min-width) {
+    .field {
+      &.half-width {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.small-form {
+  .wc-stripe-simple-form {
+    .field {
+      &.half-width {
+        width: 100%;
+
+        &:nth-child(even),
+        &:nth-child(odd) {
+          .field-item {
+            margin: 0;
+          }
+        }
+      }
+
+    }
+
+    .cvc {
+      margin-top: 10px;
+    }
+
+
+  }
+}
+
+.wc-stripe-blocks-payment-method__desc {
+  &.stripe_cc {
+    p {
+      margin: 0;
+    }
+  }
+}

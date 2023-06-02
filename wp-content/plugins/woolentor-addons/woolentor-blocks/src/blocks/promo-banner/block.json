@@ -1,0 +1,195 @@
+{
+  "name": "woolentor/promo-banner",
+  "category": "woolentor-blocks",
+  "title": "Promo Banner",
+  "attributes": {
+    "blockUniqId": {
+      "type": "string",
+      "default": ""
+    },
+    "style": {
+      "type": "string",
+      "default": "1"
+    },
+    "contentAlignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "areaBackground": {
+      "type": "string",
+      "default": "",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-banner{ background-color: {{areaBackground}}; }"
+      }
+    },
+    "areaPadding": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-banner { padding: {{areaPadding}}; }"
+      }
+    },
+    "areaMargin": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-banner { margin: {{areaMargin}}; }"
+      }
+    },
+    "title": {
+      "type": "string",
+      "default": "",
+      "selector": ".banner_title"
+    },
+    "subTitle": {
+      "type": "string",
+      "default": "",
+      "selector": ".banner_subtitle"
+    },
+    "imgId": {
+      "type": "number"
+    },
+    "imgUrl": {
+      "type": "string",
+      "source": "attribute",
+      "attribute": "src",
+      "selector": "img"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "href"
+    },
+    "buttonText": {
+      "type": "string",
+      "source": "html",
+      "selector": "a"
+    },
+    "linkTarget": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "a",
+      "attribute": "target"
+    },
+    "titleColor": {
+      "type": "string",
+      "selector": ".woolentor-banner .banner_title"
+    },
+    "titleSize": {
+      "type": "string"
+    },
+    "titlePadding": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-banner .banner_title { padding: {{titlePadding}}; }"
+      }
+    },
+    "titleMargin": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-banner .banner_title { margin: {{titleMargin}}; }"
+      }
+    },
+    "subTitleColor": {
+      "type": "string",
+      "selector": ".woolentor-banner .banner_subtitle"
+    },
+    "subTitleSize": {
+      "type": "string"
+    },
+    "subTitlePadding": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-banner .banner_subtitle { padding: {{subTitlePadding}}; }"
+      }
+    },
+    "subTitleMargin": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-banner .banner_subtitle { margin: {{subTitleMargin}}; }"
+      }
+    },
+    "buttonColor": {
+      "type": "string",
+      "selector": ".woolentor-banner .banner_button"
+    },
+    "buttonSize": {
+      "type": "string"
+    },
+    "buttonPadding": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-banner .banner_button { padding: {{buttonPadding}}; }"
+      }
+    },
+    "buttonMargin": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-banner .banner_button { margin: {{buttonMargin}}; }"
+      }
+    }
+  }
+}

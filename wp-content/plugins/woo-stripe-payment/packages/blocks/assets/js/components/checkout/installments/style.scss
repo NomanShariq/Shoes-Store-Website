@@ -1,0 +1,65 @@
+.wc-stripe-installments__container {
+  margin-top: 10px;
+
+  label {
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    margin: 0 0 5px 0;
+  }
+
+  select {
+    padding: 16px;
+    min-width: 240px;
+
+    &.loading {
+      opacity: 0.4;
+    }
+  }
+
+  .wc-stripe-installment-loader__container {
+    flex: 1 1 auto;
+
+    .wc-stripe-installment-loader {
+      width: 30px;
+      height: 30px;
+      transform: scale(.55);
+      position: absolute;
+      top: -2px;
+
+      div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        border: 3px solid #000;
+        border-radius: 50%;
+        animation: installment-loader 1.3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: #000 transparent transparent transparent;
+
+        &:nth-child(1) {
+          animation-delay: -0.45s;
+        }
+
+        &:nth-child(2) {
+          animation-delay: -0.3s;
+        }
+
+        &:nth-child(3) {
+          animation-delay: -0.15s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes installment-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

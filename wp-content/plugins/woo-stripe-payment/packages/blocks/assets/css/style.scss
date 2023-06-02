@@ -1,0 +1,21 @@
+.wc-stripe-express__sm {
+  li {
+    &[id^=express-payment-method-stripe_] {
+      width: 100%;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+
+    &[id^=express-payment-method-stripe_] {
+      &:nth-child(n + 2) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+li {
+  &#express-payment-method-stripe_link_checkout {
+    display: none;
+  }
+}

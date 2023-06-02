@@ -1,0 +1,18 @@
+2023-04-05T22:15:26+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woolentor-addons\woolentor-blocks\includes\classes\Manage_Styles.php on line 5
+
+2023-04-05T22:16:38+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\modules\library\documents\section.php on line 4
+
+2023-04-05T22:26:14+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woolentor-addons\includes\modules\variation-swatch\includes\Admin\Attribute_Taxonomy_Metabox.php on line 400
+
+2023-04-05T22:26:16+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woolentor-addons\includes\modules\variation-swatch\includes\Admin\Product_Metabox.php on line 441
+
+2023-04-05T22:28:50+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\modules\history\revisions-manager.php on line 10
+
+2023-04-05T22:28:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Payments\Integrations\Cheque.php on line 12
+
+2023-04-05T22:29:09+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-product-simple.php on line 78
+
+2023-04-05T22:29:11+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\media.php on line 3862
+
+2023-04-05T22:30:00+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\single-product\photoswipe.php on line 18
+

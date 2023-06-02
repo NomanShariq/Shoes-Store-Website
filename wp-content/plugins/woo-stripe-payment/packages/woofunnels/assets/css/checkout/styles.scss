@@ -1,0 +1,57 @@
+.wfacp_smart_buttons {
+  .wfacp_smart_button_outer_buttons {
+    .wc-stripe-checkout-banner-gateway {
+      &:not(active) {
+        display: none;
+      }
+    }
+
+    &.wfacp_button_count_1 {
+      .wc-stripe-wfacp-express-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .wc-stripe-checkout-banner-gateway {
+          margin: 0 5px;
+          max-width: 240px;
+
+          #wc-stripe-payment-request-banner {
+            min-width: 240px;
+          }
+        }
+      }
+
+      @media (max-width: 575px) {
+        .wc-stripe-wfacp-express-buttons {
+          flex-wrap: wrap;
+
+          .wc-stripe-checkout-banner-gateway {
+            flex: 1 1 100%;
+            max-width: 100%;
+
+            &:nth-child(n+2) {
+              margin: 10px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#wfacp-e-form {
+  li.wc-stripe-checkout-banner-gateway {
+    margin: 0 5px;
+  }
+
+  .wfacp_smart_buttons {
+    .wfacp_smart_button_outer_buttons {
+      &:not(.wfacp_button_count_1) {
+        .wc-stripe-checkout-banner-gateway {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "name": "woolentor/brand-logo",
+  "category": "woolentor-blocks",
+  "title": "Brand Logo",
+  "attributes": {
+    "blockUniqId": {
+      "type": "string",
+      "default": ""
+    },
+    "brandLogoList": {
+      "type": "array",
+      "default": [
+        {
+          "title": "Brand Title One",
+          "image": {
+            "id": "",
+            "url": ""
+          }
+        },
+        {
+          "title": "Brand Title Two",
+          "image": {
+            "id": "",
+            "url": ""
+          }
+        },
+        {
+          "title": "Brand Title Three",
+          "image": {
+            "id": "",
+            "url": ""
+          }
+        }
+      ]
+    },
+    "columns": {
+      "type": "object",
+      "default": {
+        "desktop": 6
+      }
+    },
+    "noGutter": {
+      "type": "boolean",
+      "default": false
+    },
+    "itemSpace": {
+      "type": "number",
+      "default": 15,
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "noGutter",
+              "condition": "==",
+              "value": false
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .woolentor-grid:not(.woolentor-no-gutters) { column-gap: {{itemSpace}}px; }"
+      }
+    },
+    "slider": {
+      "type": "boolean",
+      "default": false
+    },
+    "sliderItems": {
+      "type": "number",
+      "default": 5
+    },
+    "arrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "dots": {
+      "type": "boolean",
+      "default": false
+    },
+    "pauseOnHover": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 3000
+    },
+    "animationSpeed": {
+      "type": "number",
+      "default": 300
+    },
+    "scrollColumns": {
+      "type": "number",
+      "default": 3
+    },
+    "tabletDisplayColumns": {
+      "type": "number",
+      "default": 2
+    },
+    "tabletScrollColumns": {
+      "type": "number",
+      "default": 2
+    },
+    "tabletWidth": {
+      "type": "number",
+      "default": 750
+    },
+    "mobileDisplayColumns": {
+      "type": "number",
+      "default": 1
+    },
+    "mobileScrollColumns": {
+      "type": "number",
+      "default": 1
+    },
+    "mobileWidth": {
+      "type": "number",
+      "default": 480
+    },
+    "singleItemAreaBorderType": {
+      "type": "string",
+      "default": "",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand { border-style: {{singleItemAreaBorderType}}; }"
+      }
+    },
+    "singleItemAreaBorderWidth": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "singleItemAreaBorderType",
+              "condition": "!=",
+              "value": ""
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand { border-width: {{singleItemAreaBorderWidth}}; }"
+      }
+    },
+    "singleItemAreaBorderColor": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "singleItemAreaBorderType",
+              "condition": "!=",
+              "value": ""
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand { border-color: {{singleItemAreaBorderColor}}; }"
+      }
+    },
+    "singleItemAreaBorderRadius": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand { border-radius: {{singleItemAreaBorderRadius}}; }"
+      }
+    },
+    "singleItemAreaMargin": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand { margin: {{singleItemAreaMargin}}; }"
+      }
+    },
+    "singleItemAreaPadding": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand { padding: {{singleItemAreaPadding}}; }"
+      }
+    },
+    "brandAlignment": {
+      "type": "string",
+      "default": "center",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand { text-align: {{brandAlignment}}; }"
+      }
+    },
+    "brandImageBorderType": {
+      "type": "string",
+      "default": "",
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand img{ border-style: {{brandImageBorderType}}; }"
+      }
+    },
+    "brandImageBorderWidth": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "brandImageBorderType",
+              "condition": "!=",
+              "value": ""
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand img{ border-width: {{brandImageBorderWidth}}; }"
+      }
+    },
+    "brandImageBorderColor": {
+      "type": "string",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "brandImageBorderType",
+              "condition": "!=",
+              "value": ""
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand img{ border-color: {{brandImageBorderColor}}; }"
+      }
+    },
+    "brandImageBorderRadius": {
+      "type": "object",
+      "default": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": "",
+        "unit": "px",
+        "link": "yes"
+      },
+      "style": {
+        "selector": "{{WOOLENTOR_WRAPPER}} .wl-single-brand img{ border-radius: {{brandImageBorderRadius}}; }"
+      }
+    },
+    "navigationColor": {
+      "type": "string",
+      "default": "",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-arrow{ color: {{navigationColor}}; }"
+      }
+    },
+    "navigationBGColor": {
+      "type": "string",
+      "default": "",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-arrow{ background-color: {{navigationBGColor}}; }"
+      }
+    },
+    "navigationBorder": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-arrow"
+      }
+    },
+    "navigationHoverColor": {
+      "type": "string",
+      "default": "",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-arrow:hover{ color: {{navigationHoverColor}}; }"
+      }
+    },
+    "navigationHoverBGColor": {
+      "type": "string",
+      "default": "",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-arrow:hover{ background-color: {{navigationHoverBGColor}}; }"
+      }
+    },
+    "navigationHoverBorder": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-arrow:hover"
+      }
+    },
+    "paginationPosition": {
+      "type": "number",
+      "default": 0,
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-dots{ bottom: {{paginationPosition}}px; }"
+      }
+    },
+    "paginationColor": {
+      "type": "string",
+      "default": "",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-dots li button{ background-color: {{paginationColor}}; }"
+      }
+    },
+    "paginationBorder": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-dots li button"
+      }
+    },
+    "paginationActiveColor": {
+      "type": "string",
+      "default": "",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-dots li.slick-active button{ background-color: {{paginationActiveColor}}; }"
+      }
+    },
+    "paginationActiveBorder": {
+      "type": "object",
+      "style": {
+        "dependency": [
+          [
+            {
+              "key": "slider",
+              "condition": "==",
+              "value": true
+            }
+          ]
+        ],
+        "selector": "{{WOOLENTOR_WRAPPER}} .product-slider .slick-dots li.slick-active button"
+      }
+    }
+  }
+}

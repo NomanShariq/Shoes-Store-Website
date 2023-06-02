@@ -1,0 +1,21 @@
+.wc-stripe-label-container {
+  &.stripe_ach {
+    img {
+      &.wc-block-components-payment-method-icon--stripe_ach {
+        width: 30px;
+        height: 30px;
+        max-height: 30px;
+        object-fit: fill;
+      }
+
+    }
+  }
+}
+
+.wc-stripe-blocks-ach__creds {
+  margin-top: 10px;
+
+  .wc-stripe-blocks-ach__creds-label {
+    font-weight: 700;
+  }
+}
